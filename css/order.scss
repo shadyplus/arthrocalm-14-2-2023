@@ -1,0 +1,80 @@
+$borderRadius: 2px;
+		$primaryColor: rgb(7, 70, 130);
+
+		.order {
+		  max-width: 400px;
+		  margin: 0 auto;
+		  margin-bottom: 20px;
+		  & > * {
+			margin-bottom: 10px;
+			&:last-child {
+			  margin-bottom: 0;
+			}
+		  }
+		  // .order_product
+		  &_product {
+			display: flex;
+			justify-content: center;
+			img {
+			  max-width: 250px;
+			}
+		  }
+		  // .order_prices
+		  &_prices {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		  }
+		  // .order_prices-old
+		  &_prices-old {
+			color: red;
+			font-weight: 600;
+			text-decoration: line-through;
+			font-size: 25px;
+		  }
+		  // .order_prices-new
+		  &_prices-new {
+			color: green;
+			font-weight: 800;
+			font-size: 34px;
+		  }
+		  // .order_form
+		  &_form {
+			padding: 40px 20px;
+			background-color: transparentize($primaryColor, 0.9);
+			border-radius: $borderRadius;
+			label {
+			  display: block;
+			  text-align: center;
+			}
+			input {
+			  display: block;
+			  width: 90%;
+			  padding: 10px;
+			  border: 1px solid grey;
+			  margin: 0 auto;
+			  margin-bottom: 10px;
+			  border-radius: $borderRadius;
+			}
+			button {
+			  border: none;
+			  cursor: pointer;
+			  display: block;
+			  width: 100%;
+			  padding: 20px 10px;
+			  font-size: 20px;
+			  font-weight: 700;
+			  border-radius: $borderRadius;
+			  background-color: $primaryColor;
+			  color: #fff;
+			  text-transform: uppercase;
+			  transition: 0.2s;
+			  &:hover {
+				background-color: lighten($primaryColor, 10%);
+			  }
+			  &:disabled {
+				background-color: #ccc;
+			  }
+			}
+		  }
+		}

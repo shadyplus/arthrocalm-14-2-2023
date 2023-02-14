@@ -1,0 +1,71 @@
+.order {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.order > * {
+  margin-bottom: 10px;
+}
+.order > *:last-child {
+  margin-bottom: 0;
+}
+.order_product {
+  display: flex;
+  justify-content: center;
+}
+.order_product img {
+  max-width: 250px;
+}
+.order_prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.order_prices-old {
+  color: red;
+  font-weight: 600;
+  font-size: 25px;
+}
+.order_prices-new {
+  color: green;
+  font-weight: 800;
+  font-size: 34px;
+}
+.order_form {
+  padding: 40px 20px;
+  background-color: rgba(7, 70, 130, 0.1);
+  border-radius: 2px;
+}
+.order_form label {
+  display: block;
+  text-align: center;
+}
+.order_form input {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid grey;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.order_form button {
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 2px;
+  background-color: rgb(7, 70, 130);
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.order_form button:hover {
+  background-color: #0a60b2;
+}
+.order_form button:disabled {
+  background-color: #ccc;
+}/*# sourceMappingURL=order.css.map */
